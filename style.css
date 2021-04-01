@@ -135,8 +135,6 @@ button:active {
   font-size: 18px;
   line-height: 27px;
   color: #f7f7f7;
-  margin-top: 51px;
-  margin-bottom: 61px;
 }
 .donate {
   width: 160px;
@@ -168,6 +166,10 @@ button:active {
 .picture-container {
   margin-left: 120px;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 340px;
 }
 .middle-of-site {
   width: 100%;
@@ -202,7 +204,6 @@ button:active {
   border: 0px;
 }
 .get-noficated {
-  width: 526px;
   font-size: 27px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #333333;
@@ -247,6 +248,7 @@ button:active {
 .email-send {
   display: flex;
   margin-top: 61px;
+  width: 660px;
 }
 .email {
   background: #CCCCCC;
@@ -288,6 +290,7 @@ button:active {
   font-size: 23px;
   color: #F7F7F7;
   background-color: transparent;
+  margin-left: 20px;
 }
 .footer-text:active {
   transform: scale(0.9);
@@ -295,7 +298,6 @@ button:active {
 }
 .footer-text-wrap {
   display: flex;
-  width: 480px;
   justify-content: space-between;
   align-items: center;
 }
@@ -311,9 +313,15 @@ button:active {
   display: flex;
   justify-content: space-between;
 }
+.social {
+  width: 40px;
+}
 @media screen and (max-width: 1060px) {
   .picture-container {
     margin-top: 100px;
+  }
+  .buttons-bar {
+    width: 380px;
   }
 }
 @media screen and (max-width: 1220px) {
@@ -323,5 +331,72 @@ button:active {
   }
   .middle-of-site {
     margin-top: 100px;
+  }
+  .deer {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .squirrel {
+    margin-bottom: 20px;
+  }
+  .bird {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .picture-container {
+    transform: scale(0.8);
+    margin-left: 60px;
+  }
+  .logo-div {
+    margin-left: 60px;
+  }
+  .buttons-bar {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .picture-container {
+    height: 240px;
+  }
+  .logo-div {
+    margin-left: 30px;
+  }
+  .buttons-bar {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .email-send {
+    width: 400px;
+  }
+  .footer-buttons {
+    width: 130px;
+  }
+  .social {
+    width: 32px;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header {
+    transform: scale(0.8);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .picture-container {
+    transform: scale(0.6);
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .email-send {
+    width: 200px;
   }
 }
