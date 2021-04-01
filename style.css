@@ -478,9 +478,12 @@ button:active {
     margin-top: 35px;
   }
   .email {
-    width: 200px;
+    width: 150px;
   }
   .email-send {
     margin-left: 50px;
+  }
+  .email-send {
+    width: 100px;
   }
 }
