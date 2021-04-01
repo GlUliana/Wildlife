@@ -244,7 +244,8 @@ button:active {
 .email-send {
   display: flex;
   margin-top: 61px;
-  width: 660px;
+  width: 100%;
+  margin-left: 389px;
 }
 .email {
   background: #CCCCCC;
@@ -371,6 +372,8 @@ button:active {
   .email-send {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-left: 30px;
   }
   .footer-buttons {
     width: 130px;
@@ -408,7 +411,6 @@ button:active {
 }
 @media screen and (max-width: 430px) {
   .email-send {
-    width: 180px;
     margin-right: 170px;
   }
   .text-footer {
@@ -488,12 +490,16 @@ button:active {
     margin-top: 35px;
   }
   .email {
-    width: 150px;
+    margin-right: 20px;
   }
-  .email-send {
-    margin-left: 50px;
+}
+@media screen and (max-width: 600px) {
+  .email {
+    transform: scale(0.8);
   }
-  .email-send {
-    width: 100px;
+}
+@media screen and (max-width: 500px) {
+  .email {
+    transform: scale(0.6);
   }
 }
