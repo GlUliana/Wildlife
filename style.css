@@ -245,7 +245,8 @@ button:active {
   display: flex;
   margin-top: 61px;
   width: 100%;
-  margin-left: 389px;
+  justify-content: center;
+  margin-bottom: 239px;
 }
 .email {
   background: #CCCCCC;
@@ -259,7 +260,6 @@ button:active {
   padding-left: 15px;
   padding-right: 15px;
   border-right: 0;
-  margin-bottom: 239px;
 }
 .send {
   width: 120px;
@@ -369,34 +369,6 @@ button:active {
   }
 }
 @media screen and (max-width: 720px) {
-  .email-send {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 30px;
-  }
-  .footer-buttons {
-    width: 130px;
-  }
-  .social {
-    width: 32px;
-  }
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .email {
-    margin-bottom: 0;
-    border-radius: 2px;
-    border: #666666 1px solid;
-  }
-  .send {
-    margin-bottom: 239px;
-    border-radius: 5px;
-  }
-}
-@media screen and (max-width: 720px) {
   .header {
     transform: scale(0.8);
     flex-direction: column;
@@ -408,11 +380,11 @@ button:active {
     margin-top: 40px;
     margin-left: 0;
   }
+  .email-send {
+    transform: scale(0.8);
+  }
 }
 @media screen and (max-width: 430px) {
-  .email-send {
-    margin-right: 170px;
-  }
   .text-footer {
     margin-right: 30px;
   }
@@ -489,17 +461,10 @@ button:active {
     height: 100px;
     margin-top: 35px;
   }
-  .email {
-    margin-right: 20px;
-  }
 }
-@media screen and (max-width: 600px) {
-  .email {
-    transform: scale(0.8);
-  }
-}
-@media screen and (max-width: 500px) {
-  .email {
-    transform: scale(0.6);
-  }
+@media screen and (max-width: 870px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
